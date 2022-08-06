@@ -5,6 +5,7 @@ const App = () => {
     <Father>
       <Box bgColor="tomato" />
       <Circle bgColor="teal" />
+      <Input as="a" />
     </Father>
   );
 };
@@ -22,4 +23,8 @@ const Box = styled.div`
 `;
 const Circle = styled(Box)`
   border-radius: 100px;
+`;
+const Input = styled.input.attrs({ required: true })`
+  background-color: tomato;
+  width: 100px;
 `;
